@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.txusballesteros.bubbles.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!--Profile image for the chat head.-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_head_profile_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/play_bubble"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        tools:ignore="ContentDescription" />
+
+</com.txusballesteros.bubbles.BubbleLayout>

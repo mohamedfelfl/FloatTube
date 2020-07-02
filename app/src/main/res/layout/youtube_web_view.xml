@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.asksira.webviewsuite.WebViewSuite
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:enableHorizontalScrollBar="false"
+        app:enableJavaScript="true"
+        app:enableVerticalScrollBar="false"
+        app:inflationDelay="100"
+        app:showZoomControl="false"
+        app:url="@string/youtube_link"
+        app:webViewProgressBarStyle="circular" />
+</RelativeLayout>
