@@ -23,10 +23,11 @@ public class YoutubePlayerActivity extends AppCompatActivity {
             Intent start = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                     Uri.parse("package:" + getPackageName()));
             startActivityForResult(start, OVERLAY_RC);
+        }else{
+            Intent data = new Intent(this, YoutubeFloatingWindowService.class);
+            data.putExtra(Intent.EXTRA_TEXT, videoLink);
+            ContextCompat.startForegroundService(this, data);
         }
-        Intent data = new Intent(this, YoutubeFloatingWindowService.class);
-        data.putExtra(Intent.EXTRA_TEXT, videoLink);
-        ContextCompat.startForegroundService(this, data);
         finish();
     }
 
